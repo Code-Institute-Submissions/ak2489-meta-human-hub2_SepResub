@@ -10,36 +10,36 @@ This is the main marketing blog for Meta Human Hub. It is designed to be a platf
 
 ## User Experience (UX)
 
--    ### User Stories
-    -   #### 1. As a user, I would like to be able to...
+### User Stories
+#### 1. As a user, I would like to be able to...
 
-        1.1 View the about me page so that I understand what the blog is about.
-        1.2 View a list of posts so I can select one to view.
-        1.3 Click on a post so I can see the full content within it.
-        1.4 Register an account so that I can comment on posts and leave reviews.
-        1.5 Book a session so that I can schedule a time slot with the trainer.
-        1.6 View comments on an individual post so that I can read the conversation.
-        1.7 Comment on post so I can be involved in the conversation.
+1.1 View the about me page so that I understand what the blog is about.
+1.2 View a list of posts so I can select one to view.
+1.3 Click on a post so I can see the full content within it.
+1.4 Register an account so that I can comment on posts and leave reviews.
+1.5 Book a session so that I can schedule a time slot with the trainer.
+1.6 View comments on an individual post so that I can read the conversation.
+1.7 Comment on post so I can be involved in the conversation.
 
-        #### 2. As site admin, I would like to be able to...
+#### 2. As site admin, I would like to be able to...
 
-        2.1 Create, read, update and delet posts so that I can manage my blog content.
-        2.2 Approve of disapprove comments so that I can filter out the objectionable comments.
-        2.3 Confirm a booking slot so that I can manage my schedule.
-        2.4 Comment on posts so I can be Involved in the conversation. 
-        2.5 View comments on an individual post so I can read the conversation.
+2.1 Create, read, update and delet posts so that I can manage my blog content.
+2.2 Approve of disapprove comments so that I can filter out the objectionable comments.
+2.3 Confirm a booking slot so that I can manage my schedule.
+2.4 Comment on posts so I can be Involved in the conversation. 
+2.5 View comments on an individual post so I can read the conversation.
 
--   ### Strategy
-    #### Project Goals
+### Strategy
+### Project Goals
 
-    Create a platform that allows the Trainer (admin) to advertise their skills to people (users) allowing them to view the Trainers content on fitness tips, success stories and history of the Trainer. Also allow the Trainer to interact with the users to gain potential clients. 
+Create a platform that allows the Trainer (admin) to advertise their skills to people (users) allowing them to view the Trainers content on fitness tips, success stories and history of the Trainer. Also allow the Trainer to interact with the users to gain potential clients. 
 
-    ### Scope
+### Scope
 
-    - A simple, straightforward, intuitive UX experience;
-    - An explicit content;
-    - An easy navigation for the user through all the features;
-    - A site that is visually appealing on most devices.
+- A simple, straightforward, intuitive UX experience;
+- An explicit content;
+- An easy navigation for the user through all the features;
+- A site that is visually appealing on most devices.
 
 ## Functional Scope
 Meta Human Hub Flowchart
