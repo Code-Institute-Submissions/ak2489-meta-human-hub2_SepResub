@@ -13,21 +13,22 @@ This is the main marketing blog for Meta Human Hub. It is designed to be a platf
 ### User Stories
 #### 1. As a user, I would like to be able to...
 
-1.1 View the about me page so that I understand what the blog is about.
-1.2 View a list of posts so I can select one to view.
-1.3 Click on a post so I can see the full content within it.
-1.4 Register an account so that I can comment on posts and leave reviews.
-1.5 Book a session so that I can schedule a time slot with the trainer.
-1.6 View comments on an individual post so that I can read the conversation.
-1.7 Comment on post so I can be involved in the conversation.
+- 1.1 View the about me page so that I understand what the blog is about.
+- 1.2 View a list of posts so I can select one to view.
+- 1.3 Click on a post so I can see the full content within it.
+- 1.4 Register an account so that I can comment on posts and leave reviews.
+- 1.5 Book a session so that I can schedule a time slot with the trainer.
+- 1.6 View comments on an individual post so that I can read the conversation.
+- 1.7 Comment on post so I can be involved in the conversation.
 
 #### 2. As site admin, I would like to be able to...
 
-2.1 Create, read, update and delet posts so that I can manage my blog content.
-2.2 Approve of disapprove comments so that I can filter out the objectionable comments.
-2.3 Confirm a booking slot so that I can manage my schedule.
-2.4 Comment on posts so I can be Involved in the conversation. 
-2.5 View comments on an individual post so I can read the conversation.
+- 2.1 Create, read, update and delet posts so that I can manage my blog content.
+- 2.2 Create draft posts so that I can finish making the content later.
+- 2.3 Approve of disapprove comments so that I can filter out the objectionable comments.
+- 2.4 Confirm a booking slot so that I can manage my schedule.
+- 2.5 Comment on posts so I can be Involved in the conversation. 
+- 2.6 View comments on an individual post so I can read the conversation.
 
 ### Strategy
 ### Project Goals
@@ -80,6 +81,7 @@ The chosen fonts were "" for Headings and navbar and "" for comments and paragra
 - GitHub: GitHub is used to store the project's code after being pushed from Git.
 - Google Fonts: Google fonts are used to add fonts for aesthetic and UX purposes.
 - Django: Framework used to add structure to the platform.
+- Summernote: A WYSIWYG editor for posts.
 - Cloudinary: Used to manage to images and videos for the posts. 
 
 ## Testing
