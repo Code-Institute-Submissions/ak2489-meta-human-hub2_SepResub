@@ -11,6 +11,7 @@ class Post(models.Model):
     author = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name="blog_posts")
     update_on = models.DateTimeField(auto_now=True)
+    post_image = models.ImageField()
     content = models.TextField()
     featured_image = CloudinaryField('image', default='placeholder')
     excerpt = models.TextField(blank=True)

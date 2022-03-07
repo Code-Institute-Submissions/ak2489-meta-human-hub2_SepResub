@@ -6,13 +6,13 @@
     <div class="container">
         <div class="row g-0">
             <div class="col-md-6 masthead-text text-center">
-                <!-- Post title goes in these h1 tags -->
+                <!-- Post title -->
                 <h1 class="post-title">{{ post.title }}</h1>
-                <!-- Post author goes before the | the post's created date goes after -->
+                <!-- Post author and created on date  -->
                 <p class="post-subtitle">{{ post.author }} | {{ post.created_on }}</p>
             </div>
             <div class="d-none d-md-block col-md-6 masthead-image ">
-                <!-- The featured image URL goes in the src attribute -->
+                <!-- The featured image URL -->
                 {% if "placeholder" in post.featured_image.url %}
                 <img src="https://res.cloudinary.com/dfm0zouce/image/upload/v1646061268/xxq0bqyhgfjfw6a83m78.jpg" width="100%">
                 {% else %}
@@ -27,11 +27,11 @@
     <div class="row">
         <div class="col card mb-4  mt-3 left  top">
             <div class="card-body">
-                <!-- The post content goes inside the card-text. -->
-                <!-- Use the | safe filter inside the template tags -->
+                <!-- The post content using safe filter -->
                 <p class="card-text ">
                     {{ post.content | safe }}
                 </p>
+                <img src="{{ post.post_image.url }}" width="100%">
                 <div class="row">
                     <div class="col-1">
                         {% with comments.count as total_comments %}
