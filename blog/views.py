@@ -4,15 +4,19 @@ from .models import Post
 from .forms import CommentForm
 
 
+class Home(generic.TemplateView):
+    template_name = 'index.html'
+
+
 class PostList(generic.ListView):
     model = Post
     queryset = Post.objects.filter(status=1).order_by('-created_on')
-    template_name = 'index.html'
+    template_name = 'blog.html'
     paginate_by = 3
 
 
 class PostDetail(View):
-   
+  
     def get(self, request, slug, *args, **kwargs):
         queryset = Post.objects.filter(status=1)
         post = get_object_or_404(queryset, slug=slug)

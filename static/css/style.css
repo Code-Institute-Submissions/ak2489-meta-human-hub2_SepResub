@@ -125,3 +125,10 @@ nav {
     background-color: black;
 }
 
+.navbar-light .navbar-toggler{
+    background-color: #FF9027;
+}
+
+.navbar-nav{
+    text-align: center;
+}
