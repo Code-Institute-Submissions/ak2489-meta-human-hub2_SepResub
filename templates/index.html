@@ -2,4 +2,29 @@
 
 {% block content %}
 
+<div class="home">
+    <div class="container-fluid banner">
+        <div class="row">
+            <img src="https://res.cloudinary.com/dfm0zouce/image/upload/v1646154670/IMG-20220122-WA0002_sesfbo.jpg" alt="banner image" width="100%">
+        </div>
+    </div>
+    <div class="container-fluid about">
+        <div class="row">
+            <div class="about-me col 8">
+                <h3 class="text-center brand">About Me</h3>
+                <p class="text-center">
+                    My name is Alex Green I am a fully qualifyed Private fitness coach that specializes in Strength Building, 1-2-1 / Online Coaching and Building a healthy/stable foundation for people to grow from.
+                    My goal is to get every client I have where they want to be whether it be dropping/gaining weight, toning up certain areas of the body or Improving mobility/strength.  
+                </p>
+                <p class="text-center">
+                    Once you <a class="link" href="/accounts/signup/">Sign up</a> to my site you will be able to access <a class="link" href="{% url 'blog' %}">fitness tips</a> that can help you achieve your goal.
+                </p>
+            </div>
+            <div class="about-image col-4">
+                <img src="https://res.cloudinary.com/dfm0zouce/image/upload/c_scale,q_99,w_300/v1646773308/IMG-20220308-WA0000_cropped_tnyeqr.jpg" alt="trainer image" class="trainer img-fluid">
+            </div>
+        </div>
+    </div>
+</div>
+
 {%endblock%}

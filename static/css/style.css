@@ -98,7 +98,7 @@ body {
 
 .btn-signup:hover,
 .btn-signup:active {
-    background-color: #fff;
+    background-color: black;
     color: #FF9027;
 }
 
@@ -125,10 +125,27 @@ nav {
     background-color: black;
 }
 
-.navbar-light .navbar-toggler{
+.navbar-light .navbar-toggler {
     background-color: #FF9027;
 }
 
-.navbar-nav{
+.navbar-nav {
     text-align: center;
+}
+
+.banner {
+    padding: 0 0 20px 0;
+}
+
+.trainer {
+    padding: 0 20px 20px 0;
+}
+
+/* media queries */
+
+/* for medium screen sizes 950px wide and down*/
+
+/* for small screen sizes 800px and down */
+@media screen and (max-width: 950px) {
+
 }
