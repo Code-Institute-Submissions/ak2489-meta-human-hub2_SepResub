@@ -61,6 +61,7 @@ Wireframes
 ## Surface
 ### Colours
 The colour scheme was selected by the trainer as part of his branding.
+Colour was found using [HTML Colors from Image](https://html-color-codes.info/colors-from-image/)
 
 ### Font
 Two complimentary fonts were chosen with [Google Fonts](https://fonts.google.com/)
@@ -93,7 +94,13 @@ The chosen fonts were "" for Headings and navbar and "" for comments and paragra
 # Credits
 
 ## Media
+- All media used by this site is owned by Alex Green as part of his branding for [Meta Human Hub](https://www.instagram.com/metahumanfitness92/)
 
 ## Work based on other code
+- Some code taken from Code Institue [I think before I blog](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+FST101+2021_T1/courseware/b31493372e764469823578613d11036b/fe4299adcd6743328183aab4e7ec5d13/) code along project.
+- Testing assitance used from YouTube channel [The Dumbfounds](https://www.youtube.com/channel/UC33uwXXDrI5TxG4IXnjS28g).
 
 ## Acknowledgements
+- Special thank you to go out to Narender Singh whos patience, understanding and explaining helped me finish this project. 
+- Thank you to Scott(with the Killua avatar) one of the Code Insititue tutors who always seemed to come to my aid when asking for tutor assistance. 
+- Thank you to my Wife Heather who has let me get away with doing no house work what so ever to help complete this project.
