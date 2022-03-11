@@ -2,6 +2,7 @@
 
 {% load crispy_forms_tags %}
 
+{% if user.is_authenticated %}
 <div class="masthead">
     <div class="container">
         <div class="row g-0">
@@ -14,7 +15,7 @@
             <div class="d-none d-md-block col-md-6 masthead-image ">
                 <!-- The featured image URL -->
                 {% if "placeholder" in post.featured_image.url %}
-                <img src="https://res.cloudinary.com/dfm0zouce/image/upload/v1646061268/xxq0bqyhgfjfw6a83m78.jpg" width="100%">
+                <img src="https://res.cloudinary.com/dfm0zouce/image/upload/v1646061268/xxq0bqyhgfjfw6a83m78.jpg" width="100%" alt="logo">
                 {% else %}
                 <img src=" {{ post.featured_image.url }}" width="100%">
                 {% endif %}
@@ -78,7 +79,6 @@
                     Your comment is awaiting approval
                 </div>
                 {% else %}
-                {% if user.is_authenticated %}
 
                 <h3>Leave a comment:</h3>
                 <p>Posting as: {{ user.username }}</p>
@@ -88,10 +88,22 @@
                     <button type="submit" class="btn btn-signup btn-lg">Submit</button>
                 </form>
                 {% endif %}
-                {% endif %}
             </div>
         </div>
     </div>
 </div>
-
+{% else %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="img-fluid text-center">
+            <img src="https://res.cloudinary.com/dfm0zouce/image/upload/c_scale,w_322/v1646072910/osoosbxcfksrf8dr2gr3.jpg" alt="logo">
+        </div>
+    </div>
+    <div class="row text-center">
+        <div class="sign-in-text">
+            <h2>Please <a class="link" href="{{ signup_url }}">Register</a> or <a class="link" href="{{ login_url }}">Sign in</a> to view Fitness Tips</h2>
+        </div>
+    </div>
+</div>
+{% endif %}
 {% endblock content %}
