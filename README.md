@@ -17,18 +17,16 @@ This is the main marketing blog for Meta Human Hub. It is designed to be a platf
 - 1.2 View a list of posts so I can select one to view.
 - 1.3 Click on a post so I can see the full content within it.
 - 1.4 Register an account so that I can comment on posts and leave reviews.
-- 1.5 Book a session so that I can schedule a time slot with the trainer.
-- 1.6 View comments on an individual post so that I can read the conversation.
-- 1.7 Comment on post so I can be involved in the conversation.
+- 1.5 View comments on an individual post so that I can read the conversation.
+- 1.6 Comment on post so I can be involved in the conversation.
 
 #### 2. As site admin, I would like to be able to...
 
 - 2.1 Create, read, update and delet posts so that I can manage my blog content.
 - 2.2 Create draft posts so that I can finish making the content later.
 - 2.3 Approve of disapprove comments so that I can filter out the objectionable comments.
-- 2.4 Confirm a booking slot so that I can manage my schedule.
-- 2.5 Comment on posts so I can be Involved in the conversation. 
-- 2.6 View comments on an individual post so I can read the conversation.
+- 2.4 Comment on posts so I can be Involved in the conversation. 
+- 2.5 View comments on an individual post so I can read the conversation.
 
 ### Strategy
 ### Project Goals
@@ -43,9 +41,18 @@ Create a platform that allows the Trainer (admin) to advertise their skills to p
 - A site that is visually appealing on most devices.
 
 ## Functional Scope
-Meta Human Hub Flowchart
+### Meta Human Hub Flowchart
 
-<img src="flow chart">
+<p align="center" width="100%">
+    <img width="33%" src="media/Meta-Human-hub.jpeg">
+</p>
+
+
+### Entitiy Relationship Diagram 
+
+<p align="center" width="100%">
+    <img width="33%" src="media/entity-relationship-diagram.jpg">
+</p>
 
 ## Structure
 
@@ -60,13 +67,18 @@ Wireframes
 
 ## Surface
 ### Colours
-The colour scheme was selected by the trainer as part of his branding.
-Colour was found using [HTML Colors from Image](https://html-color-codes.info/colors-from-image/)
+The colours used were selected by the Trainer Alex Green as part of his branding image.
+
+<img src="media/colour.JPG"> <img src="media/colour2.JPG">
+
+Colour was found using [HTML Colors Codes](https://html-color-codes.info/colors-from-image/). To take the colour from the banner used on the Home page. 
 
 ### Font
 Two complimentary fonts were chosen with [Google Fonts](https://fonts.google.com/)
 
-The chosen fonts were "" for Headings and navbar and "" for comments and paragraphs.
+The chosen fonts were Roboto for Headings and navbar and Lato for comments and paragraphs.
+
+<img src="media/roboto.JPG"> <img src="media/lato.JPG">
 
 ## Existing Features
 

@@ -8,9 +8,9 @@ from blog.models import Post, Comment
 class TestViews(TestCase):
 
     def setUp(self):
-        self.client = Client()
-        self.home_url = reverse('home')
-        self.blog_url = reverse('blog')
+        client = Client()
+        home_url = reverse('home')
+        blog_url = reverse('blog')
         
         self.test_user = User.objects.create(
             username="test_user",

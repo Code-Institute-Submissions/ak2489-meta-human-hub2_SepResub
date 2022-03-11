@@ -139,6 +139,22 @@ nav {
 
 .trainer {
     padding: 0 20px 20px 0;
+    border-radius: 50%;
+}
+
+
+/* Account pages */
+
+#id_username {
+    margin-left: 45px;
+}
+
+#id_password1 {
+    margin-left: 50px;
+}
+
+#id_password {
+    margin-left: 4px;
 }
 
 /* media queries */
@@ -146,6 +162,3 @@ nav {
 /* for medium screen sizes 950px wide and down*/
 
 /* for small screen sizes 800px and down */
-@media screen and (max-width: 950px) {
-
-}
