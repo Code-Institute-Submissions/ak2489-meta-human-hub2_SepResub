@@ -10,6 +10,9 @@ class Home(generic.TemplateView):
 
 class Success(generic.TemplateView):
     template_name = 'success.html'
+    model = Post
+    queryset = Post.objects.filter(status=1).order_by('-created_on')
+    paginate_by = 6
 
 
 class PostList(generic.ListView):

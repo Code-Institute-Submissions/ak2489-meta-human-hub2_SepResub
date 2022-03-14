@@ -10,17 +10,15 @@ class TestViews(TestCase):
         self.home_url = reverse('home')
         self.blog_url = reverse('blog')
 
-    def test_home_GET(self):
+    def test_home_get(self):
 
         response = self.client.get(self.home_url)
 
         self.assertEquals(response.status_code, 200)
         self.assertTemplateUsed(response, 'index.html')
 
-    def test_PostList_GET(self):
+    def test_PostList_get(self):
         response = self.client.get(self.blog_url)
 
         self.assertEquals(response.status_code, 200)
         self.assertTemplateUsed(response, 'blog.html')
-
-

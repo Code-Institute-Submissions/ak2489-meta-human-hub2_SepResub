@@ -16,7 +16,7 @@ This is the main marketing blog for Meta Human Hub. It is designed to be a platf
 - 1.1 View the about me page so that I understand what the blog is about.
 - 1.2 View a list of posts so I can select one to view.
 - 1.3 Click on a post so I can see the full content within it.
-- 1.4 Register an account so that I can comment on posts and leave reviews.
+- 1.4 Register an account so that I can see posts and comment on posts.
 - 1.5 View comments on an individual post so that I can read the conversation.
 - 1.6 Comment on post so I can be involved in the conversation.
 
@@ -47,7 +47,6 @@ Create a platform that allows the Trainer (admin) to advertise their skills to p
     <img width="33%" src="media/Meta-Human-hub.jpeg">
 </p>
 
-
 ### Entitiy Relationship Diagram 
 
 <p align="center" width="100%">
@@ -63,7 +62,26 @@ Create a platform that allows the Trainer (admin) to advertise their skills to p
 
 ## Skeleton
 
-Wireframes
+### Wireframes
+#### Home page
+
+<img src="media/home-page.jpg">
+
+#### Success Stories page
+
+<img src="media/success-stories.jpg">
+
+#### Fitness tips page
+
+<im src="media/fitness-tips.jpg">
+
+#### Post views page
+
+<img src="media/post-views.jpg">
+
+#### Register page
+
+<img src="media/register.jpg">
 
 ## Surface
 ### Colours
