@@ -8,6 +8,10 @@ class Home(generic.TemplateView):
     template_name = 'index.html'
 
 
+class Success(generic.TemplateView):
+    template_name = 'success.html'
+
+
 class PostList(generic.ListView):
     model = Post
     queryset = Post.objects.filter(status=1).order_by('-created_on')

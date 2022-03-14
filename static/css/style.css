@@ -142,6 +142,15 @@ nav {
     border-radius: 50%;
 }
 
+/* blog post view */
+
+.card-img-top {
+    height: 450px;
+}
+
+.card-title {
+    height: 80px;
+}
 
 /* Account pages */
 
@@ -160,5 +169,20 @@ nav {
 /* media queries */
 
 /* for medium screen sizes 950px wide and down*/
+@media screen and (max-width: 950px) {
+
+    .card-img-top {
+    height: 300px;
+    }
+
+    .card-title {
+    height: 100px;
+    }
+
+}
 
 /* for small screen sizes 800px and down */
+@media screen and (max-width: 800px) {
+
+
+}

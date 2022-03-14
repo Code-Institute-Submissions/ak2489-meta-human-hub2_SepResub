@@ -3,10 +3,11 @@
 {% load crispy_forms_tags %}
 
 {% if user.is_authenticated %}
+<!-- Post details body -->
 <div class="masthead">
-    <div class="container">
+    <div class="container-fluid">
         <div class="row g-0">
-            <div class="col-md-6 masthead-text text-center">
+            <div class="col-md-6 masthead-text text-center container-fluid">
                 <!-- Post title -->
                 <h1 class="post-title">{{ post.title }}</h1>
                 <!-- Post author and created on date  -->
@@ -27,9 +28,9 @@
 <div class="container">
     <div class="row">
         <div class="col card mb-4  mt-3 left  top">
-            <div class="card-body">
+            <div class="card-body text-center">
                 <!-- The post content using safe filter -->
-                <p class="card-text ">
+                <p class="card-text">
                     {{ post.content | safe }}
                 </p>
                 <img src="{{ post.post_image.url }}" width="100%">
