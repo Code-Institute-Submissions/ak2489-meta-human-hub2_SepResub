@@ -8,16 +8,18 @@ class Home(generic.TemplateView):
     template_name = 'index.html'
 
 
-class Success(generic.TemplateView):
-    template_name = 'success.html'
+class Success(generic.ListView):
     model = Post
     queryset = Post.objects.filter(status=1).order_by('-created_on')
+    queryset = queryset = Post.objects.filter(tag=1)
+    template_name = 'success.html'
     paginate_by = 6
 
 
 class PostList(generic.ListView):
     model = Post
     queryset = Post.objects.filter(status=1).order_by('-created_on')
+    queryset = Post.objects.filter(tag=0)
     template_name = 'blog.html'
     paginate_by = 6
 
