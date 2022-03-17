@@ -100,7 +100,12 @@ The chosen fonts were Roboto for Headings and navbar and Lato for comments and p
 
 ## Existing Features
 
+
+
 ## Future Features
+
+- An online booking system so logged in users can arrange time with the trainer.
+- A contact form so potential future clients can get in touch.
 
 ## Languages Used
 - Python 3.0
@@ -117,9 +122,38 @@ The chosen fonts were Roboto for Headings and navbar and Lato for comments and p
 
 ## Testing
 
+### I have manually tested the project by doing the following
+- Tested python code through [PEP8](http://pep8online.com/) linter.
+    - settings.py file showed up errors.
+    - The four too long line errors found on settings were related to links from Cloudinary and Auth Password Validators
+    - All other py filed showed no errors.
+    
+<p align='center'>
+<img src='media/settings-errors.jpg'>
+</p>
+
+-   
+
 ## Project Bugs and Solutions
 
 ## Deployment
+
+This App is deployed using Heroku.
+
+#### Heroku depolyment steps
+- Fork or clone this repository.
+- requirements.txt can be left empty as this project does not use any external libraries.
+- Create a new app in Heroku.
+- Select "New" and "Create new app".
+- Name the new app and click "Create new app".
+- In "Settings", click "Reveal Config Vars" and input the folloing.
+    - CLOUDINARY_URL
+    - DATABASE_URL
+    - SECRET_KEY
+- Click on "Deploy" and select your deploy method and repository.
+- Click "Connect" on selected repository
+- Click "Deploy Branch" in the manual deploy section.
+-Heroku will now deploy the App.
 
 # Credits
 

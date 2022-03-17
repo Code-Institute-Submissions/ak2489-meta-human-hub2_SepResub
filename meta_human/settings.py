@@ -42,7 +42,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.sites',
-    'django.contrib.staticfiles',
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
@@ -53,6 +52,12 @@ INSTALLED_APPS = [
     'crispy_forms',
     'blog',
 ]
+
+CLOUDINARY_STORAGE = {
+    'CLOUD_NAME': 'dfm0zouce',
+    'API_KEY': '991483381446293',
+    'API_SECRET': 'JVtDJPYUBQjdpi4wXsLV5c01NWM'
+}
 
 SITE_ID = 1
 
