@@ -132,10 +132,16 @@ The chosen fonts were Roboto for Headings and navbar and Lato for comments and p
 <img src='media/settings-errors.jpg'>
 </p>
 
--   
+- Tested CSS code through [W3C](https://jigsaw.w3.org/css-validator/) vailidator witrh no errors found.
+- Tested HTML code through [w3C](https://validator.w3.org/) validator 
 
 ## Project Bugs and Solutions
 
+1. Database error - This error happened after Heroku did maintenace on the database which resulted in me having to change the database url in the env.py file.
+2. 'choices' must be iterable containing tuples - missed () around 1, 'published' on line 5 in models.py file. Once added error cleared.
+3. Banner image would not load - Tried to use a locally stored image for the banner but it would not load. Uploaded banner through cloudinary and it works fine now. 
+4. CSRF verification failed - Fixed this error by adidng CSRF_TRUSTED_ORIGINS = ['https://8000-ak2489-metahumanhub2-zojhsvdjdqk.ws-us38.gitpod.io'] in the setting.py file. 
+5. CSS file not loading at deployment - 
 ## Deployment
 
 This App is deployed using Heroku.
