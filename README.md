@@ -6,7 +6,7 @@
 
 This is the main marketing blog for Meta Human Hub. It is designed to be a platform for the site owner to display posts and advertise their skills online. It has user interaction on posts so that comments can be made by the user to talk about the fitness tip posts or request a future fitness tip. It also has a booking and enquiry section for users to arrange sessions with the trainer. 
 
-<h2 align='center'><img src="responsive image"></h2>
+<h2 align='center'><img src="media/responsive.jpg"></h2>
 
 ## User Experience (UX)
 
