@@ -1,4 +1,4 @@
-<p align='center'>![Meta Human Logo](https://res.cloudinary.com/dfm0zouce/image/upload/c_scale,w_99/v1646061268/xxq0bqyhgfjfw6a83m78.jpg)</p>
+<p align='center'>[Meta Human Logo](https://res.cloudinary.com/dfm0zouce/image/upload/c_scale,w_99/v1646061268/xxq0bqyhgfjfw6a83m78.jpg)</p>
 
 <h1 align='center'>Meta Human Hub</h1>
 
@@ -136,6 +136,9 @@ The chosen fonts were Roboto for Headings and navbar and Lato for comments and p
 
 - Tested CSS code through [W3C](https://jigsaw.w3.org/css-validator/) vailidator witrh no errors found.
 - Tested HTML code through [w3C](https://validator.w3.org/) validator 
+- Tested through Chrome Dev Tools Lighthouse Report
+
+<img scr='media/lighthouse.jpg'>
 
 ### Testing User Stories from UX
 #### 1. As a user, I would like to be able to...
