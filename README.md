@@ -1,4 +1,4 @@
-![Meta Human Logo](https://res.cloudinary.com/dfm0zouce/image/upload/c_scale,w_99/v1646061268/xxq0bqyhgfjfw6a83m78.jpg)
+<p align='center'>![Meta Human Logo](https://res.cloudinary.com/dfm0zouce/image/upload/c_scale,w_99/v1646061268/xxq0bqyhgfjfw6a83m78.jpg)</p>
 
 <h1 align='center'>Meta Human Hub</h1>
 
@@ -26,7 +26,6 @@ This is the main marketing blog for Meta Human Hub. It is designed to be a platf
 - 2.2 Create draft posts so that I can finish making the content later.
 - 2.3 Approve of disapprove comments so that I can filter out the objectionable comments.
 - 2.4 Comment on posts so I can be Involved in the conversation. 
-- 2.5 View comments on an individual post so I can read the conversation.
 
 ### Strategy
 ### Project Goals
@@ -137,6 +136,40 @@ The chosen fonts were Roboto for Headings and navbar and Lato for comments and p
 
 - Tested CSS code through [W3C](https://jigsaw.w3.org/css-validator/) vailidator witrh no errors found.
 - Tested HTML code through [w3C](https://validator.w3.org/) validator 
+
+### Testing User Stories from UX
+#### 1. As a user, I would like to be able to...
+
+- 1.1 View the about me page so that I understand what the blog is about.
+    - Upon entering the site users are greeted with the banner image which gives the user a clear indication of what the site is about then you scroll down to the about me section which fully outlines the sites intentions.
+- 1.2 View a list of posts so I can select one to view.
+    - On the two pages of posts first being success stories and second being fitness tips the user can view 6 posts per page which enables them to select one to view.
+- 1.3 Click on a post so I can see the full content within it.
+    - When a user clicks on the title of a post it then takes you to the full post view so you can see the content to the post.
+- 1.4 Register an account so that I can see posts and comment on posts.
+    - The posts are only viewable to users that are signed up to the site. The registration process is easy to follow and there are links used on the home page, in the nav bar and when the user clicks on a post it asks you to register.
+- 1.5 View comments on an individual post so that I can read the conversation.
+    - Comments can be viewed on the posts once a user is signed up to see the posts. 
+- 1.6 Comment on post so I can be involved in the conversation.
+    - Registered users can leave comments on post. 
+
+#### 2. As site admin, I would like to be able to...
+
+- 2.1 Create, read, update and delete posts so that I can manage my blog content.
+    - As a created Superuser post can be created, read, updated and deleted. This can all be done from the django admin panel.
+- 2.2 Create draft posts so that I can finish making the content later.
+    - Post can be set to not published so the superuser can come back to it at another time. 
+- 2.3 Approve of disapprove comments so that I can filter out the objectionable comments.
+    - Comment have to be approved by admin or superuser before they are posted to be viewed on the site. 
+- 2.4 Comment on posts so I can be Involved in the conversation. 
+    - Superuser can also comment on posts to be involved in the conversation. 
+
+### Further testing 
+
+- The website was tested on Google Chrome, Microsoft Edge and Safari browsers.
+- The website was viewed on a variety of devices such as desktop, laptop, Android phones, iPhones and Andriod tablets. 
+- A large amount of testing was done to ensure that all pages were linking correctly.
+- Friend, Family and Peers were asked to review the site and point out any bugs and/or user experience issues. 
 
 ## Project Bugs and Solutions
 
