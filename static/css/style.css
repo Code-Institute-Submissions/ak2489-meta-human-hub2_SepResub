@@ -148,10 +148,6 @@ nav {
     height: 450px;
 }
 
-.card-title {
-    height: 80px;
-}
-
 /* Account pages */
 
 #id_username {
@@ -173,10 +169,6 @@ nav {
 
     .card-img-top {
     height: 300px;
-    }
-
-    .card-title {
-    height: 100px;
     }
 
 }

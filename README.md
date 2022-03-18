@@ -1,8 +1,8 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+![Meta Human Logo](https://res.cloudinary.com/dfm0zouce/image/upload/c_scale,w_99/v1646061268/xxq0bqyhgfjfw6a83m78.jpg)
 
 <h1 align='center'>Meta Human Hub</h1>
 
-[View the live project here.](projecturl)
+[View the live project here.](https://meta-human-hub.herokuapp.com/)
 
 This is the main marketing blog for Meta Human Hub. It is designed to be a platform for the site owner to display posts and advertise their skills online. It has user interaction on posts so that comments can be made by the user to talk about the fitness tip posts or request a future fitness tip. It also has a booking and enquiry section for users to arrange sessions with the trainer. 
 
@@ -109,6 +109,8 @@ The chosen fonts were Roboto for Headings and navbar and Lato for comments and p
 
 ## Languages Used
 - Python 3.0
+- HTML
+- CSS
 
 ## Frameworks, Libraries and Programs Used
 - Balsamiq: Balsamiq was used to create the wireframes during the design process.
@@ -119,6 +121,7 @@ The chosen fonts were Roboto for Headings and navbar and Lato for comments and p
 - Django: Framework used to add structure to the platform.
 - Summernote: A WYSIWYG editor for posts.
 - Cloudinary: Used to manage to images and videos for the posts. 
+- bootstrap: Used to assist with the responsivness and styling of the website.
 
 ## Testing
 
@@ -141,7 +144,8 @@ The chosen fonts were Roboto for Headings and navbar and Lato for comments and p
 2. 'choices' must be iterable containing tuples - missed () around 1, 'published' on line 5 in models.py file. Once added error cleared.
 3. Banner image would not load - Tried to use a locally stored image for the banner but it would not load. Uploaded banner through cloudinary and it works fine now. 
 4. CSRF verification failed - Fixed this error by adidng CSRF_TRUSTED_ORIGINS = ['https://8000-ak2489-metahumanhub2-zojhsvdjdqk.ws-us38.gitpod.io'] in the setting.py file. 
-5. CSS file not loading at deployment - 
+5. CSS file not loading at deployment - Typos in the settings.py line 155 STATISFILES_STORAGE was missing the S on files. 
+
 ## Deployment
 
 This App is deployed using Heroku.
@@ -173,4 +177,5 @@ This App is deployed using Heroku.
 ## Acknowledgements
 - Special thank you to go out to Narender Singh whos patience, understanding and explaining helped me finish this project. 
 - Thank you to Scott(with the Killua avatar) one of the Code Insititue tutors who always seemed to come to my aid when asking for tutor assistance. 
+- Thank you to Ed one of the Code Institute tutors who helped me find the typo in my code that was not letting my deployed app find me CSS file.
 - Thank you to my Wife Heather who has let me get away with doing no house work what so ever to help complete this project.
