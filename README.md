@@ -135,7 +135,7 @@ The chosen fonts were Roboto for Headings and navbar and Lato for comments and p
 </p>
 
 - Tested CSS code through [W3C](https://jigsaw.w3.org/css-validator/) vailidator witrh no errors found.
-- Tested HTML code through [w3C](https://validator.w3.org/) validator 
+- Tested HTML code through [w3C](https://validator.w3.org/) validator and no errors found on HTML pages.
 - Tested through Chrome Dev Tools Lighthouse Report
 
 <img scr='media/lighthouse.jpg'>
