@@ -1,4 +1,6 @@
-<p align='center'>[Meta Human Logo](https://res.cloudinary.com/dfm0zouce/image/upload/c_scale,w_99/v1646061268/xxq0bqyhgfjfw6a83m78.jpg)</p>
+<p align='center'>
+<img src="https://res.cloudinary.com/dfm0zouce/image/upload/c_scale,w_99/v1646061268/xxq0bqyhgfjfw6a83m78.jpg"
+</p>
 
 <h1 align='center'>Meta Human Hub</h1>
 
@@ -180,7 +182,8 @@ The chosen fonts were Roboto for Headings and navbar and Lato for comments and p
 2. 'choices' must be iterable containing tuples - missed () around 1, 'published' on line 5 in models.py file. Once added error cleared.
 3. Banner image would not load - Tried to use a locally stored image for the banner but it would not load. Uploaded banner through cloudinary and it works fine now. 
 4. CSRF verification failed - Fixed this error by adidng CSRF_TRUSTED_ORIGINS = ['https://8000-ak2489-metahumanhub2-zojhsvdjdqk.ws-us38.gitpod.io'] in the setting.py file. 
-5. CSS file not loading at deployment - Typos in the settings.py line 155 STATISFILES_STORAGE was missing the S on files. 
+5. CSS file not loading at deployment - Typos in the settings.py line 155 STATISFILES_STORAGE was missing the S on files.
+6. Blurry Images on posts thumbnails - Due to the quality of some of the videos the image that have been used as thumbnails for the posts look pixalated. 
 
 ## Deployment
 
