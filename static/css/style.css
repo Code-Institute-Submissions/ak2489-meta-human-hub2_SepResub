@@ -162,6 +162,13 @@ nav {
     margin-left: 4px;
 }
 
+/* Rating */
+
+.checked {
+    color: #FF9027;
+}
+
+
 /* media queries */
 
 /* for medium screen sizes 950px wide and down*/

@@ -40,6 +40,14 @@
                                 
                             {% endwith %}
                         </div>
+                        <div class="col float-right mb-3">
+                            <span class="fa fa-star checked" id="first"></span>
+                            <span class="fa fa-star checked" id="second"></span>
+                            <span class="fa fa-star checked" id="third"></span>
+                            <span class="fa fa-star" id="fourth"></span>
+                            <span class="fa fa-star" id="fifth"></span>
+                        </div>
+                        <div id="confirm-box"></div>
                         <div class="container-fluid">
                             <div class="row">
                                 <div class="back-button text-center">
@@ -91,7 +99,7 @@
                     <form method="post" style="margin-top: 1.3em;">
                         {{ comment_form | crispy }}
                         {% csrf_token %}
-                        <button type="submit" class="btn btn-signup btn-lg">Submit</button>
+                        <button type="submit" class="btn btn-signup btn-lg mt-3">Submit</button>
                     </form>
                     {% endif %}
                 </div>

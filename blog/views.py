@@ -1,6 +1,6 @@
 from django.shortcuts import render, get_object_or_404
 from django.views import generic, View
-from .models import Post
+from .models import Post, Rating
 from .forms import CommentForm
 
 
@@ -30,6 +30,7 @@ class PostDetail(View):
         queryset = Post.objects.filter(status=1)
         post = get_object_or_404(queryset, slug=slug)
         comments = post.comments.filter(approved=True).order_by('created_on')
+        rating = post.rating.filter(score=0)
 
         return render(
             request,
@@ -38,7 +39,8 @@ class PostDetail(View):
                 "post": post,
                 "comments": comments,
                 "commented": False,
-                "comment_form": CommentForm()
+                "comment_form": CommentForm(),
+                "rating": rating,
             },
         )
 
