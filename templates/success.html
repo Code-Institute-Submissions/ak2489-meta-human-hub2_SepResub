@@ -34,6 +34,13 @@
                                 </a>
                                 <hr />
                                 <p class="card-text text-muted h6">{{ post.created_on}}</p>
+                                {% if user.is_superuser %}
+                                    <div class="col">
+                                        <small class="ml-3">
+                                            <a href="{% url 'delete_post' post.slug %}" class="text-danger">Delete</a>
+                                        </small>
+                                    </div>
+                                {% endif %}
                             </div>
                         </div>
                     </div>

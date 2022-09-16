@@ -1,6 +1,7 @@
 from django.shortcuts import render, get_object_or_404
 from django.views import generic, View
 from django.views.generic import CreateView, DeleteView
+from django.urls import reverse_lazy
 from .models import Post
 from .forms import CommentForm, PostForm
 
@@ -80,3 +81,4 @@ class AddPost(CreateView):
 class DeletePost(DeleteView):
     model = Post
     template_name = 'delete_post.html'
+    success_url = reverse_lazy('home')

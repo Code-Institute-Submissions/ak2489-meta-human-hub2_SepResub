@@ -142,6 +142,10 @@ nav {
     border-radius: 50%;
 }
 
+.text-black {
+    color: black;
+}
+
 /* blog post view */
 
 .card-img-top {
@@ -160,17 +164,6 @@ nav {
 
 #id_password {
     margin-left: 4px;
-}
-
-/* Rating */
-
-.checked {
-    color: #FF9027;
-}
-
-.rating-btn {
-    background-color: #fff;
-    border: 0 !important;
 }
 
 /* media queries */
