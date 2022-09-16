@@ -2,13 +2,22 @@
   // Use IntelliSense to learn about possible attributes.
   // Hover to view descriptions of existing attributes.
   "version": "0.2.0",
-  "configurations": [
-      {
-            "name": "Python: Current File (Integrated Terminal)",
-            "type": "python",
-            "request": "launch",
-            "program": "${file}",
-            "console": "internalConsole"
-        }
+  "configurations": [{
+      "name": "Django",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/manage.py",
+      "args": ["runserver"],
+      "env": {
+        "CLOUDINARY_CLOUD_NAME": "dfm0zouce",
+        "CLOUDINARY_API_KEY": "991483381446293",
+        "CLOUDINARY_API_SECRET": "JVtDJPYUBQjdpi4wXsLV5c01NWM",
+        "DATABASE_URL": "postgres://uldbkstlyixfgm:00d6f0cb06295190f25d5bf02bd7551471ee65886aaf149d91789ff098eb607e@ec2-52-31-221-164.eu-west-1.compute.amazonaws.com:5432/d6d3e3hg4q981b",
+        "SECRET_KEY": "metaHuman22!!",
+        "CLOUDINARY_URL": "cloudinary://991483381446293:JVtDJPYUBQjdpi4wXsLV5c01NWM@dfm0zouce",
+      },
+      "django": true,
+      "justMyCode": true
+    }
   ]
 }
