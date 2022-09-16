@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="container-fluid">
+        <div class="header brand text-center mt-3">
+            <h1>Add Post</h1>
+        </div>
+    </div>
+    <div class="container-fluid text-center">
+        <form action="" method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="btn btn-signup btn-lg mb-3">Post</button>
+        </form>
+    </div>
+{%endblock%}

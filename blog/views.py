@@ -1,7 +1,9 @@
 from django.shortcuts import render, get_object_or_404
 from django.views import generic, View
+from django.views.generic import CreateView, UpdateView
+from django.contrib.admin.views.decorators import staff_member_required
 from .models import Post
-from .forms import CommentForm
+from .forms import CommentForm, PostForm
 
 
 class Home(generic.TemplateView):
@@ -68,3 +70,9 @@ class PostDetail(View):
                 "comment_form": CommentForm()
             },
         )
+
+
+class AddPost(CreateView):
+    model = Post
+    form_class = PostForm
+    template_name = 'add_post.html'
