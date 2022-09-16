@@ -45,6 +45,11 @@
                         <a class="nav-link active text-white" href="{% url 'blog' %}">Fitness Tips</a>
                     </li>
                     {% if user.is_authenticated %}
+                        {% if user.is_superuser %}
+                            <li class="nav-item">
+                                <a href="{% url 'create_post' %}" class="nav-link text-white">Add Post</a>
+                            </li>
+                        {% endif %}
                     <li class="nav-item">
                         <a class="nav-link text-white" href="{% url 'account_logout' %}">Logout</a>
                     </li>

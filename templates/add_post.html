@@ -1,16 +1,26 @@
 {% extends "base.html" %}
 
 {% block content %}
+    {% if user.is_superuser %}
+        <div class="container-fluid">
+            <div class="header brand text-center mt-3">
+                <h1>Add Post</h1>
+            </div>
+        </div>
+        <div class="container-fluid text-center">
+            <form action="" method="POST">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit" class="btn btn-signup btn-lg mb-3">Post</button>
+            </form>
+        </div>
+    {% endif %}
     <div class="container-fluid">
         <div class="header brand text-center mt-3">
-            <h1>Add Post</h1>
+            <h1>Oops this page it not available</h1>
+            <a href="{% url 'home' %}">
+                <button class="btn btn-signup btn-lg mb-3 mt-3">Home</button>
+            </a>
         </div>
-    </div>
-    <div class="container-fluid text-center">
-        <form action="" method="POST">
-            {% csrf_token %}
-            {{ form.as_p }}
-            <button type="submit" class="btn btn-signup btn-lg mb-3">Post</button>
-        </form>
     </div>
 {%endblock%}
