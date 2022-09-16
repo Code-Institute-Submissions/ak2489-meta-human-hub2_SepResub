@@ -41,16 +41,3 @@ class Comment(models.Model):
 
     def __str__(self):
         return f"Comment {self.body} by {self.name}"
-
-
-class Rating(models.Model):
-    post = models.ForeignKey(
-        Post, on_delete=models.CASCADE, related_name="rating")
-    score = models.IntegerField(default=0, validators=[
-            MaxValueValidator(5),
-            MinValueValidator(0),
-        ]
-    )
-
-    def __str__(self):
-        return str(self.pk)
