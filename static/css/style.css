@@ -102,6 +102,19 @@ body {
     color: #FF9027;
 }
 
+.btn-like {
+    color: #ff0030;
+    border: none;
+    background: transparent;
+}
+
+.btn-like:hover,
+.btn-like:active {
+    color: black;
+    background: transparent;
+    border: none;
+}
+
 .link {
     color: #FF9027;
     text-decoration: none;

@@ -40,6 +40,7 @@
                             {% endwith %}
                         </div>
                         <div class="col-4">
+                            {% if user.is_authenticated %}
                             <form class="d-inline" action="{% url 'post_like' post.slug %}" method="POST">
                                 {% csrf_token %}
                                 {% if liked %}
@@ -50,8 +51,10 @@
                                             class="far fa-heart"></i></button>
                                 {% endif %}
                             </form>
-                            <span class="text-secondary"><i class="far fa-heart custom-tooltip" data-toggle="tooltip"></i></span>
-                            <span class="text-secondary">{{ post.number_of_likes }}</span>
+                            {% else %}
+                                <span class="text-secondary"><i class="far fa-heart custom-tooltip" data-toggle="tooltip"></i></span>
+                                {% endif %}
+                                <span class="text-secondary">{{ post.number_of_likes }}</span>
                         </div>
                         {% if user.is_superuser %}
                             <div class="col-4 float-right">
