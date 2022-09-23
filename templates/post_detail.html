@@ -43,15 +43,14 @@
                             <form class="d-inline" action="{% url 'post_like' post.slug %}" method="POST">
                                 {% csrf_token %}
                                 {% if liked %}
-                                <button type="submit" name="blogpost_id" aria-label="Like post" value="{{post.slug}}" class="btn-like"><i
-                                        class="fas fa-heart text-decoration-none"></i></button>
+                                    <button type="submit" name="blogpost_id" aria-label="Like post" value="{{ post.slug }}" class="btn-like"><i
+                                            class="fas fa-heart text-decoration-none"></i></button>
                                 {% else %}
-                                <button type="submit" name="blogpost_id" aria-label="Like post" value="{{post.slug}}" class="btn-like"><i
-                                        class="far fa-heart"></i></button>
+                                    <button type="submit" name="blogpost_id" aria-label="Like post" value="{{ post.slug }}" class="btn-like"><i
+                                            class="far fa-heart"></i></button>
                                 {% endif %}
                             </form>
-                            <span class="text-secondary"><i class="far fa-heart custom-tooltip" data-toggle="tooltip"
-                                    title="You must create an account or log in to like a post."></i></span>
+                            <span class="text-secondary"><i class="far fa-heart custom-tooltip" data-toggle="tooltip"></i></span>
                             <span class="text-secondary">{{ post.number_of_likes }}</span>
                         </div>
                         {% if user.is_superuser %}

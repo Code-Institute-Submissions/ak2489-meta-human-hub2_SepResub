@@ -7,7 +7,6 @@ from .forms import CommentForm, PostForm
 from django.contrib.auth.mixins import LoginRequiredMixin
 
 
-
 class Home(generic.TemplateView):
     template_name = 'index.html'
 
@@ -34,6 +33,9 @@ class PostDetail(LoginRequiredMixin, View):
         queryset = Post.objects.filter(status=1)
         post = get_object_or_404(queryset, slug=slug)
         comments = post.comments.filter(approved=True).order_by('created_on')
+        liked = False
+        if post.likes.filter(id=self.request.user.id).exists():
+            liked = True
 
         return render(
             request,
@@ -42,6 +44,7 @@ class PostDetail(LoginRequiredMixin, View):
                 "post": post,
                 "comments": comments,
                 "commented": False,
+                "liked": liked,
                 "comment_form": CommentForm(),
             },
         )
